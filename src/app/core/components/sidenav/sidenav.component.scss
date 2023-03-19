@@ -1,0 +1,85 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: var(--primary-color);
+    transition: var(--tran-05);
+    z-index: 100;
+
+    & .image {
+        display: flex;
+        align-items: center;
+    }
+    & img {
+        border-radius: 6px;
+    }
+    & .text {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--sidebar-text-color);
+        transition: var(--tran-04);
+        white-space: nowrap;
+        opacity: 1;
+    }
+    & fa-icon {
+        color: var(--sidebar-text-color);
+        font-size: 1.5rem;
+    }
+    & li {
+        height: 50px;
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        :hover {
+            background-color: #218cbd;
+        }
+        & a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: var(--tran-04);
+            border-radius: 6px;
+
+        }
+    }
+    & .search-box {
+        display: flex;
+        height: 2rem;
+    }
+    & .search-box input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+    }
+    & .icon-bar {
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+}
+
+.close {
+    width: 50px;
+    & .text {
+        opacity: 0;
+    }
+    & ~ .home {
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+}
+
+.home {
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
+}

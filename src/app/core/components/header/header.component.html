@@ -1,0 +1,29 @@
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-1">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0 head mt-4">
+                <a class="navbar-brand">NOVA ADMISSÃO COOPERADO</a>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-1">
+                      <li class="breadcrumb-item"><a><p class="text-sm-start">Cadastro</p></a></li>
+                      <li class="breadcrumb-item"><a>Admissão do Cooperado</a></li>
+                      <li class="breadcrumb-item active">Nova admissão de Cooperado</li>
+                    </ol>
+                </nav>
+            </div>
+            <a class="me-1">
+                <fa-icon class="icon me-2" [icon]="faBell"></fa-icon>
+                <span class="position-absolute badge rounded-pill bg-danger">
+                {{ notifications }}
+                    <span class="visually-hidden">Notificações não lidas</span>
+                  </span>
+            </a>
+            <form class="d-flex me-2 ms-2">
+                <button type="button" class="btn btn-outline-primary rounded-btn">VIACREDI</button>
+            </form>
+            <div class="avatar me-5 ms-2 ">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" style="width: 50px;" alt="Avatar" />
+            </div>
+          </div>
+        </nav>
+      </div>
