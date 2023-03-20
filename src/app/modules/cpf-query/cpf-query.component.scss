@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.step-item {
+    z-index: 10;
+    & .active {
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+    }
+    & .step-name {
+        display: flex;
+        margin-left: -9px;
+    }
+}
+
+.step-button {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--ailos-grey);
+}
+
+#progress {
+    top: 9px;
+    position: absolute;
+    width: 92%;
+    z-index: 5;
+    height: 2px;
+}
+
+#progress::-webkit-progress-value {
+    background-color: var(--primary-color);
+    transition: .2s ease;
+}
+
+#progress::-webkit-progress-bar {
+    background-color: var(--ailos-grey);
+}
