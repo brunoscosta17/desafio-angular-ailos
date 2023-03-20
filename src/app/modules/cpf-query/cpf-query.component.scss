@@ -22,7 +22,19 @@ body {
         background-color: transparent;
         border: 2px solid var(--primary-color);
     }
-    & .step-name {
+    & .step-inicio {
+        display: flex;
+        margin-left: -28px;
+    }
+    & .step-documentos {
+        display: flex;
+        margin-left: -7px;
+    }
+    & .step-dados-cadastrais {
+        display: flex;
+        margin-left: -5px;
+    }
+    & .step-admissão {
         display: flex;
         margin-left: -9px;
     }
@@ -51,4 +63,14 @@ body {
 
 #progress::-webkit-progress-bar {
     background-color: var(--ailos-grey);
+}
+
+.input-cpf {
+    border-radius: 0;
+}
+
+.query-btn {
+    border-radius: 0;
+    color: var(--body-color);
+    background-color: var(--primary-color);
 }

@@ -3,32 +3,49 @@
         <progress id="progress" value="0" max="100"></progress>
         <div class="step-item">
             <button class="step-button text-center active" type="button" data-toggle="collapse" data-target="#collapseThree"
-                aria-expanded="false" aria-controls="collapseThree">
+                aria-expanded="false" aria-controls="collapseThree" style="margin-left: -19px">
             </button>
-            <span class="d-block step-name">Inicio</span>
+            <span class="d-block step-inicio">Inicio</span>
         </div>
         <div class="step-item">
             <button class="step-button text-center" type="button" data-toggle="collapse" data-target="#collapseThree"
                 aria-expanded="false" aria-controls="collapseThree" style="margin-left: 27px;">
             </button>
-            <span class="d-block step-name">Documentos</span>
+            <span class="d-block step-documentos">Documentos</span>
         </div>
         <div class="step-item">
             <button class="step-button text-center" type="button" data-toggle="collapse" data-target="#collapseThree"
                 aria-expanded="false" aria-controls="collapseThree" style="margin-left: 45px;">
             </button>
-            <span class="d-block step-name">Dados cadastrais</span>
+            <span class="d-block step-dados-cadastrais">Dados cadastrais</span>
         </div>
         <div class="step-item">
             <button class="step-button text-center" type="button" data-toggle="collapse" data-target="#collapseThree"
                 aria-expanded="false" aria-controls="collapseThree">
             </button>
-            <span class="d-block step-name" style="margin-left: -24px;">Admissão</span>
+            <span class="d-block step-admissao" style="margin-left: -24px;">Admissão</span>
         </div>
     </div>
 </div>
-<div class="card">
-    <div class="card-header" id="headingOne">
-        <h2 class="mb-0"></h2>
-    </div>
+<div class="container d-inline">
+    <div class="row ms-3">
+        <div class="col-8">
+            <p class="h4 text-left">Informe o CPF do fututo cooperado(a)</p>
+            <small class="text-muted">Se necessário, você poderá duplicar uma conta existente ou paisar e retomar este cadastro futuramente.<br>Digite apenas os números(sem pontos ou traços).</small>
+        </div>
+      </div>
+    <div class="row ms-3 mt-3">
+        <div class="col-8">
+            <form>
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control input-cpf" placeholder="Digite o CPF" mask="000.000.000-00">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn query-btn mb-2">Consultar por CPF</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </div>
 </div>
