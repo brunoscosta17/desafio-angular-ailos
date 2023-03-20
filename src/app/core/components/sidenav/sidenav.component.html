@@ -1,6 +1,6 @@
 <nav class="sidebar" [ngClass]="{'close': sideNavStatus}">
     <header>
-        <div class="image-logo m-2">
+        <div class="image-logo">
             <span class="image">
                 <img src="../../../../assets/logo.png" alt="ailos logo">
             </span>
@@ -8,7 +8,7 @@
     </header>
     <div class="menu-bar p-2">
         <div class="menu">
-            <ul class="menu-links p-1">
+            <ul class="menu-links mt-2">
                 <fa-icon class="icon icon-bar toggle" [icon]="faBars" (click)="toggleSideBar()"></fa-icon>
                 <div class="search-box mt-3">
                     <fa-icon class="icon me-2" [icon]="faMagnifyingGlass"></fa-icon>
