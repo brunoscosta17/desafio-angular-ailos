@@ -41,7 +41,7 @@
             <form>
                 <div class="row">
                     <div class="col-6">
-                        <input type="text" class="form-control input-cpf" placeholder="Digite o CPF"
+                        <input type="text" class="form-control input-cpf" placeholder="000.000.000-00"
                             mask="000.000.000-00">
                     </div>
                     <div class="col-auto">
@@ -49,26 +49,74 @@
                     </div>
                 </div>
             </form>
-            <div class="card mt-4" style="width: 22.5rem;" *ngIf="hasData">
-                <div class="card-body">
-                    <h5 class="card-title mb-0">Situação cadastral do CPF</h5>
-                    <small class="text-muted">Consulta na Receita Federal</small>
-                    <div class="row mt-3 p-0 m-0">
-                        <div class="col-2 mt-2">
-                            <fa-icon class="icon" [icon]="faUser"></fa-icon>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card mt-4" *ngIf="hasData">
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Situação cadastral do CPF</h5>
+                        <small class="text-muted">Consulta na Receita Federal</small>
+                        <div class="row mt-3 p-0 m-0">
+                            <div class="col-2 mt-2">
+                                <fa-icon class="icon" [icon]="faUser"></fa-icon>
+                            </div>
+                            <div class="col-10 ps-0">
+                                <small class="text-muted">Nome</small>
+                                <p class=" fw-bold">{{ cpfName }}</p>
+                            </div>
                         </div>
-                        <div class="col-10 ps-0">
-                            <small class="text-muted">Nome</small>
-                            <p class=" fw-bold">{{ cpfName }}</p>
+                        <div class="row mt-2 p-0 m-0">
+                            <div class="col-2 mt-2">
+                                <fa-icon class="icon icon-check" [icon]="faCircleCheck"></fa-icon>
+                            </div>
+                            <div class="col-10 ps-0">
+                                <small class="text-muted">Situação do CPF</small>
+                                <p class=" fw-bold">{{ cpfStatus }}</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row mt-2 p-0 m-0">
-                        <div class="col-2 mt-2">
-                            <fa-icon class="icon icon-check" [icon]="faCircleCheck"></fa-icon>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mt-4" *ngIf="hasData">
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Conta aplicação</h5>
+                        <small class="text-muted">Cooperativa Viacredi</small>
+                        <div class="row mt-3 p-0 m-0">
+                            <div class="col-2 mt-2">
+                                <fa-icon class="icon" [icon]="faWallet"></fa-icon>
+                            </div>
+                            <div class="col-10 ps-0">
+                                <small class="text-muted">Número da conta</small>
+                                <p class=" fw-bold">{{ checkingAccount }}</p>
+                            </div>
                         </div>
-                        <div class="col-10 ps-0">
-                            <small class="text-muted">Situação do CPF</small>
-                            <p class=" fw-bold">{{ cpfStatus }}</p>
+                        <div class="row mt-2 p-0 m-0">
+                            <div class="col-10 ps-5 mt-4 link-card">
+                                <p class="fw-bold">Duplicar conta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mt-4" *ngIf="hasData">
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Conta aplicação</h5>
+                        <small class="text-muted">Cooperativa Viacredi</small>
+                        <div class="row mt-3 p-0 m-0">
+                            <div class="col-2 mt-2">
+                                <fa-icon class="icon" [icon]="faWallet"></fa-icon>
+                            </div>
+                            <div class="col-10 ps-0">
+                                <small class="text-muted">Número da conta</small>
+                                <p class=" fw-bold">{{ checkingAccount }}</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2 p-0 m-0">
+                            <div class="col-10 ps-5 mt-4 link-card">
+                                <p class="fw-bold">Duplicar conta</p>
+                            </div>
                         </div>
                     </div>
                 </div>

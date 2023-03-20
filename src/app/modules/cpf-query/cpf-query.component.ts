@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faStar, faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faUser, faWallet } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-cpf-query',
@@ -12,10 +12,12 @@ export class CpfQueryComponent implements OnInit {
 
   faUser = faUser;
   faCircleCheck = faCircleCheck;
+  faWallet = faWallet;
 
-  hasData: boolean = false;
+  hasData: boolean = true;
   cpfName: string = 'Bruno da Silva Costa';
   cpfStatus: string = 'Regular';
+  checkingAccount: string = '3453673-2';
 
   constructor() { }
 
