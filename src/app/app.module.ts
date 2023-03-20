@@ -9,18 +9,20 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { SidenavComponent } from './core/components/sidenav/sidenav.component';
 import { HeaderComponent } from './core/components/header/header.component';
+import { CpfQueryComponent } from './modules/cpf-query/cpf-query.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    HeaderComponent
+    HeaderComponent,
+    CpfQueryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
