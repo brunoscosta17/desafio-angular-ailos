@@ -74,14 +74,20 @@ body {
 }
 
 .query-btn, .primary-btn {
-    padding: .5rem;
+    border-radius: 0;
+    color: var(--body-color);
+    background-color: var(--primary-color);
+}
+
+.primary-btn {
+    padding: .6rem;
     border-radius: 0;
     color: var(--body-color);
     background-color: var(--primary-color);
 }
 
 .secondary-btn {
-    padding: .5rem;
+    padding: .6rem;
     border-radius: 0;
     color: var(--text-color);
     background-color: var(--alios-white);
@@ -102,7 +108,7 @@ fa-icon {
 }
 
 .footer {
-    width: 100%;
+    width: 85%;
     position: fixed;
     bottom:0;
     padding: .8rem;
