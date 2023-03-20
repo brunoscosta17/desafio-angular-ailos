@@ -69,8 +69,25 @@ body {
     border-radius: 0;
 }
 
+.card {
+    border-radius: 0;
+}
+
 .query-btn {
     border-radius: 0;
     color: var(--body-color);
     background-color: var(--primary-color);
+}
+
+.text-muted {
+    color: var(--ailos-grey);
+}
+
+fa-icon {
+    color: var(--ailos-grey);
+    font-size: 1.3rem;
+}
+
+.icon-check {
+    color: var(--green);
 }

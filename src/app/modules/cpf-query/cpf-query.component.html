@@ -2,8 +2,9 @@
     <div class="steps">
         <progress id="progress" value="0" max="100"></progress>
         <div class="step-item">
-            <button class="step-button text-center active" type="button" data-toggle="collapse" data-target="#collapseThree"
-                aria-expanded="false" aria-controls="collapseThree" style="margin-left: -19px">
+            <button class="step-button text-center active" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                style="margin-left: -19px">
             </button>
             <span class="d-block step-inicio">Inicio</span>
         </div>
@@ -31,21 +32,47 @@
     <div class="row ms-3">
         <div class="col-8">
             <p class="h4 text-left">Informe o CPF do fututo cooperado(a)</p>
-            <small class="text-muted">Se necessário, você poderá duplicar uma conta existente ou paisar e retomar este cadastro futuramente.<br>Digite apenas os números(sem pontos ou traços).</small>
+            <small class="text-muted">Se necessário, você poderá duplicar uma conta existente ou paisar e retomar este
+                cadastro futuramente.<br>Digite apenas os números(sem pontos ou traços).</small>
         </div>
-      </div>
+    </div>
     <div class="row ms-3 mt-3">
         <div class="col-8">
             <form>
                 <div class="row">
-                  <div class="col-6">
-                    <input type="text" class="form-control input-cpf" placeholder="Digite o CPF" mask="000.000.000-00">
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn query-btn mb-2">Consultar por CPF</button>
-                  </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control input-cpf" placeholder="Digite o CPF"
+                            mask="000.000.000-00">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn query-btn mb-2">Consultar por CPF</button>
+                    </div>
                 </div>
-              </form>
+            </form>
+            <div class="card mt-4" style="width: 22.5rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-0">Situação cadastral do CPF</h5>
+                    <small class="text-muted">Consulta na Receita Federal</small>
+                    <div class="row mt-3 p-0 m-0">
+                        <div class="col-2 mt-2">
+                            <fa-icon class="icon" [icon]="faUser"></fa-icon>
+                        </div>
+                        <div class="col-10 ps-0">
+                            <small class="text-muted">Nome</small>
+                            <p class=" fw-bold">{{ cpfName }}</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2 p-0 m-0">
+                        <div class="col-2 mt-2">
+                            <fa-icon class="icon icon-check" [icon]="faCircleCheck"></fa-icon>
+                        </div>
+                        <div class="col-10 ps-0">
+                            <small class="text-muted">Situação do CPF</small>
+                            <p class=" fw-bold">{{ cpfStatus }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 </div>
