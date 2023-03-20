@@ -16,13 +16,13 @@
     & .text {
         font-size: 1rem;
         font-weight: 500;
-        color: var(--sidebar-text-color);
+        color: var(--alios-white);
         transition: var(--tran-04);
         white-space: nowrap;
         opacity: 1;
     }
     & fa-icon {
-        color: var(--sidebar-text-color);
+        color: var(--alios-white);
         font-size: 1.5rem;
     }
     & li {

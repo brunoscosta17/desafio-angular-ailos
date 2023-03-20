@@ -13,6 +13,7 @@ export class CpfQueryComponent implements OnInit {
   faUser = faUser;
   faCircleCheck = faCircleCheck;
 
+  hasData: boolean = false;
   cpfName: string = 'Bruno da Silva Costa';
   cpfStatus: string = 'Regular';
 

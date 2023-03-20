@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </form>
-            <div class="card mt-4" style="width: 22.5rem;">
+            <div class="card mt-4" style="width: 22.5rem;" *ngIf="hasData">
                 <div class="card-body">
                     <h5 class="card-title mb-0">Situação cadastral do CPF</h5>
                     <small class="text-muted">Consulta na Receita Federal</small>
@@ -76,3 +76,15 @@
         </div>
     </div>
 </div>
+<footer class="footer">
+      <div class="row">
+        <div class="col-md-6 d-flex mt-2">
+            <div class="col-auto me-3" *ngIf="hasData">
+                <button type="submit" class="btn primary-btn mb-2">Iniciar nova admissão</button>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn secondary-btn mb-2">Dicas para abertura da conta</button>
+            </div>
+        </div>
+      </div>
+  </footer>
